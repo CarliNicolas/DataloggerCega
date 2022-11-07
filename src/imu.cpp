@@ -1,8 +1,6 @@
 
 #include "I2Cdev.h"
 #include "MPU6050.h"
-
-
 #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
     #include "Wire.h"
 #endif
@@ -13,7 +11,6 @@ int16_t ax, ay, az;
 int16_t gx, gy, gz;
 
 #define OUTPUT_READABLE_ACCELGYRO
-
 
 #define LED_PIN 13
 bool blinkState = false;
@@ -38,7 +35,6 @@ void setup() {
     Serial.println(accelgyro.testConnection() ? "MPU6050 connection successful" : "MPU6050 connection failed");
 
 
-    
     pinMode(LED_PIN, OUTPUT);
 }
 
