@@ -1,4 +1,4 @@
-
+// MPU6050 IMU
 #include "I2Cdev.h"
 #include "MPU6050.h"
 #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
